@@ -1,0 +1,798 @@
+/* =========================================
+        Niku.OS
+        Full style.css
+        Windows 95 + ARG Horror
+========================================= */
+
+
+*{
+
+    margin:0;
+    padding:0;
+
+    box-sizing:border-box;
+
+    font-family:
+    "MS Sans Serif",
+    Tahoma,
+    Arial,
+    sans-serif;
+
+    user-select:none;
+
+}
+
+
+body{
+
+    width:100vw;
+    height:100vh;
+
+    overflow:hidden;
+
+    background:#008080;
+
+}
+
+
+/* =========================================
+            DESKTOP
+========================================= */
+
+
+#desktop{
+
+    width:100%;
+    height:calc(100vh - 40px);
+
+    padding:15px;
+
+    position:relative;
+
+}
+
+
+/* =========================================
+            ÍCONES
+========================================= */
+
+
+.icon{
+
+    width:90px;
+
+    margin-bottom:20px;
+
+    text-align:center;
+
+    color:white;
+
+    font-size:13px;
+
+    cursor:pointer;
+
+}
+
+
+.icon img{
+
+    width:48px;
+    height:48px;
+
+    image-rendering:pixelated;
+
+    display:block;
+
+    margin:auto;
+
+}
+
+
+.icon span{
+
+    display:block;
+
+    margin-top:5px;
+
+}
+
+
+.icon:hover{
+
+    background:#000080;
+
+}
+
+
+/* =========================================
+            JANELAS
+========================================= */
+
+
+.window{
+
+    position:absolute;
+
+    left:200px;
+    top:100px;
+
+    width:600px;
+    height:400px;
+
+    background:#c0c0c0;
+
+    border-top:2px solid white;
+    border-left:2px solid white;
+
+    border-right:2px solid black;
+    border-bottom:2px solid black;
+
+    box-shadow:5px 5px 0 black;
+
+    display:none;
+
+    z-index:100;
+
+}
+
+
+/* =========================================
+            BARRA DE TITULO
+========================================= */
+
+
+.titlebar{
+
+    height:28px;
+
+    background:linear-gradient(
+        90deg,
+        #000080,
+        #1084d0
+    );
+
+    color:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:5px;
+
+    font-weight:bold;
+
+}
+
+
+.titlebar button{
+
+
+    width:22px;
+
+    height:22px;
+
+
+    background:#c0c0c0;
+
+
+    border-top:2px solid white;
+
+    border-left:2px solid white;
+
+    border-right:2px solid black;
+
+    border-bottom:2px solid black;
+
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+
+}
+
+
+
+/* =========================================
+            CONTEÚDO
+========================================= */
+
+
+.content{
+
+    padding:10px;
+
+    height:calc(100% - 28px);
+
+    overflow:auto;
+
+}
+
+
+
+/* =========================================
+            EXPLORADOR
+========================================= */
+
+
+ul{
+
+    list-style:none;
+
+}
+
+
+li{
+
+    margin:8px;
+
+    cursor:pointer;
+
+}
+
+
+li:hover{
+
+    background:#000080;
+
+    color:white;
+
+}
+
+
+
+/* =========================================
+            TERMINAL
+========================================= */
+
+
+#terminalOutput{
+
+
+    background:black;
+
+
+    color:#00ff00;
+
+
+    height:280px;
+
+
+    padding:10px;
+
+
+    overflow:auto;
+
+
+    font-family:
+
+    "Courier New",
+    monospace;
+
+
+    font-size:15px;
+
+
+    border:
+
+    3px inset gray;
+
+
+}
+
+
+
+#terminalInput{
+
+
+    width:100%;
+
+
+    margin-top:5px;
+
+
+    padding:5px;
+
+
+    background:black;
+
+
+    color:#00ff00;
+
+
+    border:2px inset gray;
+
+
+    outline:none;
+
+
+    font-family:
+
+    "Courier New",
+    monospace;
+
+
+}
+
+
+
+/* =========================================
+            NOTEPAD
+========================================= */
+
+
+textarea{
+
+
+    width:100%;
+
+    height:100%;
+
+
+    resize:none;
+
+
+    border:
+
+    2px inset gray;
+
+
+    padding:10px;
+
+
+    font-family:
+
+    "Courier New",
+    monospace;
+
+
+}
+
+
+
+/* =========================================
+            BARRA DE TAREFAS
+========================================= */
+
+
+#taskbar{
+
+
+    position:fixed;
+
+
+    bottom:0;
+
+
+    left:0;
+
+
+    width:100%;
+
+
+    height:40px;
+
+
+    background:#c0c0c0;
+
+
+    border-top:2px solid white;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:space-between;
+
+
+    padding:4px;
+
+
+    z-index:999;
+
+
+}
+
+
+
+#startButton{
+
+
+    height:30px;
+
+
+    width:90px;
+
+
+    font-weight:bold;
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+/* =========================================
+            MENU INICIAR
+========================================= */
+
+
+#startMenu{
+
+
+    position:fixed;
+
+
+    bottom:40px;
+
+
+    left:0;
+
+
+    width:220px;
+
+
+    background:#c0c0c0;
+
+
+    padding:5px;
+
+
+    display:none;
+
+
+    border-top:2px solid white;
+
+    border-left:2px solid white;
+
+    border-right:2px solid black;
+
+    border-bottom:2px solid black;
+
+
+    z-index:1000;
+
+
+}
+
+
+
+#startMenu button{
+
+
+    width:100%;
+
+
+    padding:8px;
+
+
+    margin-bottom:4px;
+
+
+    text-align:left;
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+/* =========================================
+            RELÓGIO
+========================================= */
+
+
+#clock{
+
+
+    background:#c0c0c0;
+
+
+    padding:5px 15px;
+
+
+    border:
+
+    2px inset gray;
+
+
+    font-size:14px;
+
+
+}
+
+
+
+/* =========================================
+            CRT EFFECT
+========================================= */
+
+
+.crt{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:9000;
+
+}
+
+
+
+/* =========================================
+            NIKUSA GLITCH
+========================================= */
+
+
+#nikusaGlitch{
+
+    position:fixed;
+
+    inset:0;
+
+    background:black;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:999999;
+
+}
+
+
+#nikusaGlitch img{
+
+    max-height:70%;
+
+}
+
+
+
+#nikusaGlitch img{
+
+
+    width:350px;
+
+
+    image-rendering:pixelated;
+
+
+    filter:
+
+    brightness(60%)
+
+    contrast(200%);
+
+
+    animation:
+
+    flicker .15s infinite;
+
+
+}
+
+
+
+#nikusaGlitch h1{
+
+
+    color:white;
+
+
+    margin-top:30px;
+
+
+    font-family:
+
+    "Courier New",
+    monospace;
+
+
+    font-size:28px;
+
+
+    text-align:center;
+
+
+    text-shadow:
+
+    3px 0 red,
+
+    -3px 0 cyan;
+
+
+    animation:
+
+    textError .2s infinite;
+
+
+}
+
+
+
+/* =========================================
+            ANIMAÇÕES
+========================================= */
+
+
+@keyframes shake{
+
+
+    0%{
+
+        transform:translate(0);
+
+    }
+
+
+    50%{
+
+        transform:translate(4px,-2px);
+
+    }
+
+
+    100%{
+
+        transform:translate(0);
+
+    }
+
+}
+
+
+
+@keyframes flicker{
+
+
+    0%{
+
+        opacity:.2;
+
+    }
+
+
+    50%{
+
+        opacity:1;
+
+    }
+
+
+    100%{
+
+        opacity:.4;
+
+    }
+
+}
+
+
+
+@keyframes textError{
+
+
+    0%{
+
+        transform:translateX(0);
+
+    }
+
+
+    50%{
+
+        transform:translateX(5px);
+
+    }
+
+
+    100%{
+
+        transform:translateX(-5px);
+
+    }
+
+}
+
+
+
+/* =========================================
+            MODO CORROMPIDO
+========================================= */
+
+
+.corrupted{
+
+
+    animation:
+
+    shake .1s infinite;
+
+
+    filter:
+
+    hue-rotate(90deg);
+
+
+}
+
+.window{
+
+    display:none;
+
+    position:absolute;
+
+    left:200px;
+
+    top:100px;
+
+    width:600px;
+
+    height:400px;
+
+    background:#c0c0c0;
+
+    z-index:99999;
+
+}
+
+#nikusaNotification{
+
+    position:fixed;
+
+    right:30px;
+
+    bottom:30px;
+
+    width:350px;
+
+    background:black;
+
+    color:white;
+
+    border:2px solid red;
+
+    padding:20px;
+
+    font-family:Consolas;
+
+    z-index:999999;
+
+    animation: aparecer 0.5s;
+
+}
+
+
+@keyframes aparecer{
+
+    from{
+
+        transform:translateX(400px);
+
+    }
+
+
+    to{
+
+        transform:translateX(0);
+
+    }
+
+}

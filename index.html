@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Niku.OS</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- DESKTOP -->
+
+<div id="desktop">
+
+
+    <div class="icon" onclick="openWindow('explorer')">
+
+        <img src="img/folder.png">
+
+        <span>Arquivos</span>
+
+    </div>
+
+
+<div class="icon" onclick="openWindow('terminal')">
+
+    <img src="img/terminal.png">
+
+    <span>Terminal</span>
+
+</div>
+
+    </div>
+
+
+    <div class="icon" onclick="openWindow('notepad')">
+
+        <img src="img/notepad.png">
+
+        <span>Notas</span>
+
+    </div>
+
+
+    <div class="icon" onclick="openWindow('recycle')">
+
+        <img src="img/recycle.png">
+
+        <span>Lixeira</span>
+
+    </div>
+
+
+</div>
+
+
+
+
+
+<!-- EXPLORADOR DE ARQUIVOS -->
+
+
+<div class="window" id="explorer">
+
+
+    <div class="titlebar">
+
+        <span>Explorador de Arquivos</span>
+
+        <button onclick="closeWindow('explorer')">
+            X
+        </button>
+
+    </div>
+
+
+    <div class="content">
+
+        <h3>Niku.OS</h3>
+
+        <hr>
+
+
+        <p>📁 logs</p>
+
+        <p>📁 system</p>
+
+        <p>📁 users</p>
+
+        <p>📁 secret</p>
+
+        <br>
+
+        <p>📄 boot.log</p>
+
+        <p>📄 readme.txt</p>
+
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+<!-- TERMINAL -->
+
+
+<div class="window" id="terminal">
+
+
+    <div class="titlebar">
+
+        <span>Terminal</span>
+
+        <button onclick="closeWindow('terminal')">
+            X
+        </button>
+
+    </div>
+
+
+
+    <div class="content">
+
+
+        <pre id="terminalOutput">
+
+Niku.OS Terminal
+----------------
+
+Digite "help"
+
+        </pre>
+
+
+        <input 
+        id="terminalInput"
+        type="text"
+        placeholder="comando..."
+        >
+
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- BLOCO DE NOTAS -->
+
+
+<div class="window" id="notepad">
+
+
+    <div class="titlebar">
+
+        <span>Bloco de Notas</span>
+
+        <button onclick="closeWindow('notepad')">
+            X
+        </button>
+
+
+    </div>
+
+
+
+    <div class="content">
+
+
+        <textarea id="notes">
+
+Niku.OS
+
+Arquivo criado.
+
+        </textarea>
+
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- LIXEIRA -->
+
+
+<div class="window" id="recycle">
+
+
+    <div class="titlebar">
+
+        <span>Lixeira</span>
+
+        <button onclick="closeWindow('recycle')">
+            X
+        </button>
+
+    </div>
+
+
+
+    <div class="content">
+
+
+        <p>
+        A lixeira está vazia.
+        </p>
+
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- MENU INICIAR -->
+
+
+<div id="startMenu">
+
+
+    <button onclick="openWindow('explorer')">
+        📁 Arquivos
+    </button>
+
+
+    <button onclick="openWindow('terminal')">
+        💻 Terminal
+    </button>
+
+
+    <button onclick="openWindow('notepad')">
+        📝 Notas
+    </button>
+
+
+    <button onclick="shutdown()">
+        🔌 Desligar
+    </button>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- BARRA DE TAREFAS -->
+
+
+<div id="taskbar">
+
+
+    <button id="startButton" onclick="toggleStart()">
+
+        Iniciar
+
+    </button>
+
+
+    <div id="clock">
+
+        00:00
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- EFEITO CRT -->
+
+<div class="crt"></div>
+
+
+
+
+
+
+
+<!-- SCRIPTS -->
+
+
+<script src="script.js"></script>
+
+
+<script src="apps/glitches.js"></script>
+
+<script src="apps/terminal.js"></script>
+
+<script src="apps/explorer.js"></script>
+
+<script src="apps/recycle.js"></script>
+
+<script src="apps/notepad.js"></script>
+
+<script src="apps/audio.js"></script>
+
+
+
+</body>
+
+</html>

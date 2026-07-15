@@ -1,0 +1,7 @@
+LOG 001
+
+Sistema iniciado.
+
+Todos os arquivos estão íntegros.
+
+...
